@@ -1,0 +1,12 @@
+﻿Console.WriteLine("PRODUTO QUE DESEJA:");
+string produto = Console.ReadLine();
+Console.WriteLine("DIGITE O PREÇO EM REAIS:");
+double preco = double.Parse(Console.ReadLine());
+Console.WriteLine("QUANTIDADE:");
+int unidade = int.Parse(Console.ReadLine());
+double valorCompra = preco * unidade;
+Console.WriteLine("---RECIBO---");
+Console.WriteLine($"-Produto: {produto}");
+Console.WriteLine($"-Preço da unidade:{preco}");
+Console.WriteLine($"-Quantidade:{unidade}");
+Console.WriteLine($"Valor total: R${valorCompra:F2}");
